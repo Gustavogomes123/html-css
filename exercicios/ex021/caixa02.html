@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags de agrupamento</title>
+    <style>
+        /* *{
+            border-radius: 5px;
+        }*/
+        body{
+            background-color:  lightgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        nav{
+            background-color: rgb(68, 68, 211);
+            padding: 3px;
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.877);
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 40px;
+            box-shadow: 5px 3px 13px black;
+             /*se eu colocar 2 valores em px no border-radius ele vai deixar as bordas em direções opostas como se fosse 1 "x" com os valores iguais veja o teste lá no site lembrando que se vc for pro 4 valores, a ordem certa é:  border-top-left-radius, border-top-right-radius,
+            border-bottom-left-radius,
+            border-bottom-right-radius
+             */
+             /* lembrando que a margin também é usada para afastar um bloco de outros blocos.*/
+        }
+        article > aside{
+            background-color: aquamarine;
+        }
+        div#bola{
+            background: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            /*no css eu posso usar porcentagem no border-radius para transformar uma bola*/
+        }
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            
+        }
+        footer > p {
+            margin: 0px;
+        }
+        
+    </style>
+    <!--as tags podem ser colocadas da maneira que eu quiser, não preciso seguir essa ordem a baixo!-->
+    <!--lembrando que erros de css por exemplo vc vai tentar diminuir algo e vc n consegue diminuir, esses erros podem ser facilmente encontrados no devtools vc já encontra o erro pela raiz e edita no css sendo bem direto acrescentando o ">" nas tags"-->
+</head>
+    <body>
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <p>esportes politicas tecnologia</p>
+            </section>
+            <section id="noticias">
+
+            </section>
+            <article>
+            <h2>noticias sobre o brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo deserunt non perspiciatis qui eum, quis asperiores error dolores minima omnis obcaecati ea ut sed, quos dolorum pariatur voluptatibus repellendus!</p>
+            </article>
+        </main>
+        
+        <footer>
+            <p>desenvolvedor gust</p>
+        </footer>
+        <div id="bola"></div>
+    </body>
+</html>

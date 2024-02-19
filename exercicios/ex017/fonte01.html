@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonte css</title>
+</head>
+<style>
+    body {
+      font-family: Georgia, serif;
+      font-size: 20px;/*para tamanho de fonte use apenas px ou em.
+      1em = 16px*/
+      font-style: italic;
+      font-weight: bolder;/*weight(peso), width(largura), height(altura).
+      weight: lighter, normal, bold, bolder*/
+      /*dá pra dar uma shorthand(uma mãozinha) usando um codigo css com varios estilo em apenas 1 linha:
+      font-weight, font size e font style; mostrarei no h1
+      faça usando essa ordem(muito importante):
+      -font-style -> font-weight -> font-size ->font-family
+      se trocar a ordem, o código não vai funcionar.
+      text-indent: 30px; esse código fará o inicio do texto/frase ter uma identação de 30px.
+      */
+    }
+    /*text-align: justify; esse código "justificado" alinhará o texto para direita e para esquerda(chegando até o fim de ambos os lados).*/
+    h1{
+        font: italic bolder 3em "Work Sans", sans-serif;
+    }
+    /* medidas absolutas: 
+    cm, mm, in(polegadas), pt, px, pc(PYCA)
+    medidas relativas:
+    em(relativo ao tamanho atual da letra), ex(fará o texto ficar do tamanho da letra "x" alinhada certamente), rem(tipo o "EM" só que é relativo ao rooth = a fonte que está configurada no body), vw(o tamanho da view port = tamanho da tela, use a porcentagem para o vw) vh(altura da view port), %*/
+    
+    </style>
+    
+<body>
+    <h1>testando fontes</h1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste <br> beatae sapiente repellat ipsa est sint laudantium quo neque culpa eligendi adipisci vitae, esse ducimus eveniet doloremque vel! Ea, nam!</P>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Facilis porro ea cupiditate dolores suscipit iure eligendi deleniti delectus recusandae eveniet necessitatibus officia numquam, corporis accusantium consequatur, ullam maxime totam adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iure mollitia ea earum, perspiciatis delectus aspernatur commodi itaque ut repellat porro, ducimus placeat amet distinctio nostrum,<br> sunt iusto? Libero, inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum natus quisquam quas ducimus ut repudiandae nisi, facere ipsam nesciunt at perferendis libero vitae, ullam reiciendis in? Illo, sunt incidunt.</p>
+</body>
+</html>

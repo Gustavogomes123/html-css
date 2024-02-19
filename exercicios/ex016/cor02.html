@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiente css</title>
+</head>
+<!--DIREÇÕES DO CSS: RIGHT, LEFT, TOP E BOTTOM-->
+<style>
+    *{/* configuração global em css
+        AVISO PALETA 3 A 5 CORES NADA MAIS QUE ISSO
+        sites com 2 cores ficam ruins a maioria das vezes e site com 5 cores viram um carnaval(bom)*/
+        height: 100%;
+    }
+    body{
+        /*no lugar do das posições eu posso colocar tambem 45deg, -45deg, dps do "background image" posso colcoar tambem radial-gradiente e dentro dele inplementar "circle"*/
+        background-image: radial-gradient(circle, #8E07FF 30%, #DA08E3, #FD049C, #FF5B07, #FFA404);
+        background-attachment: fixed;
+         /*quando eu rolar o feed o background/conteudo do css ficará fixo junto com o feed.
+         posso tambem por porcentagens que as cores vao efetuar no tamanho*/
+         /*outro jeito de usar um degrade sem o circle:|
+         background-image: linear-gradient(to top, #DA08E3, #FD049C, #FF5B07, #FFA404, #8E07FF);
+         background-attachment: fixed;
+         */
+    }
+</style>
+<body>
+    <h1>testando gradiente(degrade)</h1>
+</body>
+</html>

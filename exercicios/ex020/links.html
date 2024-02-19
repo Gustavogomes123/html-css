@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*pseudo classe ":" pseudo elementos "::" 
+     filho ">" */
+    body{
+        font-family: sans-serif;
+        background-color: rgb(235, 150, 150);
+    }
+    a{
+        color: red;
+        font-weight: bold;
+    }
+    a:visited{
+        color: blue; /*quando eu visitar o link, ele ficará vermelho*/
+    }
+    a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline; /*quando passar o mouse por cima, deixa preto e mostre a underline*/
+    }
+    a:active{
+        color: yellow;/*quando for ativado(quando eu clicar num link vai deixar ele amarelo, isso não é permanente)*/
+    }
+    a::before{
+        content: " ✆ ";/*antes dos links mostre o simbolo do wpp*/
+    }
+    a::after{
+        content: "[link]";/*depois dos links adcione um "[link]" */
+        text-decoration: none;
+        font-weight: normal;
+        color: gray;
+    }
+</style>
+<body>
+    <h1>personalizando links</h1>
+    <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">link para youtube</a></li>
+    <li><a href="https://www.facebook.com/">link para facebook</a></li>
+    <li><a href="https://www.google.com.br/"> link para o google</a></li>
+</body>
+</html>

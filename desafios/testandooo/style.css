@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*tem 2 jeitos de usar uma fonte, primeiro jeito importando a url e dps pegando a font family lá no google fontes e usando desse jeito da linha 3 e 15.
+e também tem o segundo jeito que vc pega fazendo download da fonte, veja lá em baixo dps do separador*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+body{
+    background-color: #2CFACB;
+}
+:root{
+    --cor01: #48CFB0;
+    --cor02: #2CFACB;
+    --cor03: #45524F;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Sixtyfour', sans-serif;
+}
+h2{
+    font-family: var(--fonte-padrao);
+}
+div{
+    background-color: rgba(128, 128, 128, 0.589);
+    padding: 40px;
+    border-radius: 10px;
+
+}
+/*_________________________________________ separador*/
+
+@font-face{
+    font-family: 'Android';
+    src: url('../testandooo/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --fonte-android: 'Android';
+}
+h3{
+    font-family: var(--fonte-android);
+}

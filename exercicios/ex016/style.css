@@ -1,0 +1,31 @@
+@charset "UTF-8";
+*{
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: right;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color: #1700E0;
+}
+h2{
+    color: #AA00E0;
+}
+main{
+    /*sobre a escrita(tipografia) a forma de escrever tambem gera emoções que nem as cores*/
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 3px black;/*2px andando pro lado, 2 px andando pro lado e 10px de espalhamento e 
+    3px andando para todos os lados com a cor preta*/
+    background-color: white;
+    width: 600px;
+    padding: 50px;
+    /*text-align: center;*/
+    margin:auto;/*vai centralizar o bloco para o meio da tela*/
+}
+body{
+    background-image: linear-gradient(to right, #067BC2, #24ff5494);
+}

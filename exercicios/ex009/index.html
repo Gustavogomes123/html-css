@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="c:\Users\gusta\OneDrive\Documentos\estudos\html-css\exercicios\ex003\Horgout.ico" type="image/x-icon">
+    <title>listas</title>
+</head>
+<body>
+    <h1>trabalhando com listas</h1>
+    <ol type="I"><!--Organização de Lista, esse "Ol" fará as listas ficarem em ordem numérica, é boa pra vc poupar seu tempo de ficar mudando todos os números da lista quando vc for mudar alguma coisa... normalmente a tag "OL" vem sem parametro e ela já ordena através de numeros, mas se vc querer escolher o tipo da ordem é só colocar "type="" " no parametro-->
+        <li> comer
+        <li> escovar os dentes
+        <li> deitar
+        <li> acordar
+        <li> sair<!--lista. não é obrigatório usar a tag pra fechar essa tag "</li>"-->
+    </ol>
+    <ul type="disc"><!--tipos disc, circle e square. UL = LISTAS NÃO ORDENADAS-->
+        <li>feijão
+        <li>arroz
+        <li>batata
+        <li>carne
+    </ul>
+    <h1>juntando listas:</h1>
+    <ol type="a">
+        <li>linguagens de programação:</li>
+        <ol type="a">
+            <li>javascript</li>
+            <li>python</li>
+            <li>c#</li>
+        </ol>
+        <li>linguagem de desenvolvimento:</li>
+        <ol type="a" start="9"><!--esse start fará a ordem alfabetica da lista começar pela nona(9) letra do abecedario(letra"i")-->
+            <li>css</li>
+        </ol>
+    </ol>
+    <!--EU TAMBEM POSSO MISTURAR "OL" COM "UL"-->
+    <dl><!--lista de definição-->
+        <dt>definição de termo</dt>
+        <dd>definição de descrição</dd>
+        <dt>HTML</dt>
+        <dd>hyper text markup language, linguagem de programação para textos</dd>
+        <dt>
+            CSS
+        </dt>
+        <dd>
+            linguagem de desenvolvimento para design
+        </dd>
+    </dl>
+</body>
+</html>

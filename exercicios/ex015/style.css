@@ -1,0 +1,17 @@
+@charset "UTF-8"; /*tudo oque começa com "@" é uma regra e regras ficam no começo do css. quando eu uso essa regra "@charset "UTF-8";" eu falo que o index usará o arquivo style.css*/
+h2{
+    background-color: rgb(170, 116, 116);
+}
+p{
+    text-align: justify;/*vai deixar o texto alinhado*/
+}
+body{
+    background-color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    text-decoration: underline;
+    color: brown;
+    text-align: right;
+}

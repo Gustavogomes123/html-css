@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*vc pode selecionar o id/class sem citar a tag apenas coloque o ./# no inicio e coloque o nome da class/id que vc colocou dentro da tag por exemplo:
+.inter = class inter
+#inter = id inter
+*/
+body{
+    background-color: aqua;
+}
+h1{
+    color: green;
+}
+h1#principal{
+    color: red;
+    text-align: center;
+}
+h2{
+
+}
+p{ 
+    width: 400px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+}
+p.inter{
+    background-color: black;
+}

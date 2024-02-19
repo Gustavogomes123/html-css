@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div > p{/*quando ter esse simbolo ">" no css mostra que a tag que esta em primeiro é pai do que esta a frente do simbolo ">" e com esse abre e fecha de chaves eu vou editar apenas o filho(o que estiver em primeiro do lado direito)*/
+        display:none;/*não mostre nada*/
+    }
+    div:hover{
+        color: red;
+    }
+    div:hover > p {
+        display:block;/*fará o bloco do texto aparecer*/
+        background-color: red;
+        color: white;
+        width: 300px;
+    }
+</style>
+<body>
+    <h1>passe o mouse no texto abaixo</h1>
+    <div> passe o mouse aqui
+        <p>
+            TEXTO ESCONDIDO
+        </p>
+    </div>
+    <p>fim do exemplo
+    </p>
+</body>
+</html>

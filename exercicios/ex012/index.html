@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserindo videos</title>
+</head>
+<body>
+    <h1>inserindo videos</h1>
+    <h2>inserindo videos direto no servidor</h2>
+    <video controls width="500" poster="imagens/Captura de tela 2023-12-21 113333.png" loop><!--posso colocar controls autoplay no parametro tambem, não tem probla-->
+        <source src="midia/pexels_videos_2583492 (1080p).mp4" type="video/mp4">
+        <source src="midia/pexels_videos_2583492-_1080p_.ogv" type="video/ogv">
+        <p>seu navegador não tem compatibilidade para esses videos(não carregou)</p><!--os formatos são mp4/mp4, m4v/mp4, webm/webm e ogv/ogg--><!--a tag é source/src-->
+        <!--concelho rapido, usando essa tecnica de videos com a tag videos, vai pesar no bolso do cliente pois cada imagem tem seu peso na hora de carregar o video e se muitas pessoas entrar no site vai deixa-lo lerdo pq os videos não estão hospedados em seu site e sim no servidor que quando será carregado diversas vezes ficará pesado pra todos e isso vai atrasar o lado do seu cliente pois ele n qr algo pesado pra espalhar para o publico alvo... (hospede os videos para evitar bugs no trafego de dados no navegador/site) outro exemplo se o video tem 11.5kb(11.5megas) se 1000 pessoas entrar no site e carregar o video, o site de seu cliente ficará com 11.5 gigas-->
+    </video> <h2>consome o espaço de meu site/\</h2>
+    <h2>inserindo videos do youtube: #consome espaço do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=lSaecB65LwgAPTIz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--diferente da tag video que consome o espaço de nosso site, essa tag do youtube vai consumir do youtube, então eu recomendo vc pedir pro seu cliente escolher um video do youtube que o site dele sairá bem leve. eu tambem recomendo vc a usar os videos do ytb pq o youtube é o segundo maior buscador de pesquisa do mundo e o primeiro é o google, e o youtube é do google eles fazem parte da alphabet que é a empresa q controla os 2. E cuidado com os direitos autorais pq o youtube pega, sla use seus videos do youtube ou do seu cliente um dos 2 tem que ter um canal no youtube...--><!--utilize o VIMEO ele é uma plataforma de videos que permite vc hospedar os videos em seu site e bloquear os videos para quem não paga tambem, mt bom mas vc tem q comprar o pacote business que é 50 dolares mensalmente... vantagem e desvantagem do vimeo: vantagem qualidade boa pra videos. desvantagem: o algoritmo dele não é tão bom quanto a do youtube. se no vimeo eu for em compartilhar e dps em incoporar lá terá varias outras informações que o youtube dá como por exemplo: estilo de video-->
+    <h2>vimeo: #consome o espaço do vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/895977355?h=e11b60e340&color=e0e2e4" width="627" height="470" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/895977355">Two Chairs, Not One</a> from <a href="https://vimeo.com/benigndelusion">Benign Delusion</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    <br>
+    <audio src="midia/NEFFEX.mp3" controls autoplay></audio>
+</body>
+<style>
+    body{background-color: rgb(132, 34, 132);}
+    audio{color: black;rgb(173, 61, 61)}
+    video{border-radius: 20px;}
+</style>
+</html>

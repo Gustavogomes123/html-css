@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borda personalizada</title>
+</head>
+<style>
+    h1{
+        border: 10px solid black;
+        padding: 10px;
+        border-image-source: url('borda.png');
+        /*daqui pro css de cima irá apenas colocar a imagem da borda nas 4 pontas do conteudo(borda) do bloco vms fatiar a imagem com o css a baixo desse comentário*/
+        border-image-slice: 28;
+        border-image-repeat: repeat;/*no lugar do repeat(laranja) eu posso por "stretch" isso vai puxar a linha da borda(não ficará mt bom, mas pega esse outro conhecimento aí.)
+        /*agora é só editar o tamanho da borda lá no devtools e deixar da maneira que vc achar melhor os pontilhados*/
+        /*eu posso fazer o shorthand(encurtador de linhas para bordas) usando nessa ordem:
+        border-image-source: url('borda.png') 27 repeat
+        apaga aquelas linhas lá de cima e use essa que eu escrevi, vai dar no msm... lembrando que o border:10px solid black/transparent tem que ficar pq será uma base para a borda que a gente criou, caso contrário não terá como por imagem de nossa borda e se o navegador não for compativel nossa borda ficará transparente/preto pq a gente colocou lá como transparente/preto para ser a base*/
+    }
+</style>
+<body>
+    <h1>teste de borda personalizada</h1>
+</body>
+</html>
