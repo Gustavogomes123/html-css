@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        fundo fixo de tela
+    </title>
 </head>
 <style>
     body{
         height: 100vh;
+        
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-repeat: no-repeat;
@@ -16,11 +19,17 @@
         /*background-size: contain;
         (apagado) o contain vai mostrar 100% da imagem e vai tentar adaptar 100% da imagem sem cortar */
         background-size: cover;/*cover vai espremer a imagem a ponto que caiba na tela, então ela vai ficar pequena mas vai se sair bem visualmente
-        OK MAS, qual é melhor contain ou cover? a resposta é simples, depende do que eu estar querendo fazer*/ 
+        OK MAS, qual é melhor contain ou cover? a resposta é simples, depende do que eu estar querendo fazer*/
+        background-attachment: fixed;/*o fixed fará a imagem de fundo ficar fixa e só vai rolar o conteudo, se eu colocasse scroll(a imagem iria rolar pra baixo junto com o conteúdo)*/
+
+        /* Shorthand - background
+            faça nessa ordem: 
+                color > image > position > repeat > [size] > attachment:
+                aprenda a fazer o shorthand pois a explicação foi falha "shorthand do background" */
     }
     main{
         background-color: white;
-        width: 400px;
+        max-width: 700px;
         padding: 10px;
         margin: auto;
         border-radius: 5px;
@@ -31,7 +40,7 @@
 <body>
     <main>
         <h1>teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident explicabo architecto iusto minus ut dolor pariatur dolorum sapiente maiores distinctio ratione hic eos delectus id harum quidem, adipisci aliquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium sunt harum at doloribus quis quos id! Eaque error obcaecati velit culpa, architecto repudiandae fugiat tempora incidunt ab illo harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, culpa. Repellat iusto officiis corporis ducimus? Voluptatem vel, ipsam assumenda, eius esse tenetur debitis aliquid eligendi vero beatae doloremque doloribus facere.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident explicabo architecto iusto minus ut dolor pariatur dolorum sapiente maiores distinctio ratione hic eos delectus id harum quidem, adipisci aliquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium sunt harum at doloribus quis quos id! Eaque error obcaecati velit culpa, architecto repudiandae fugiat tempora incidunt ab illo harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, culpa. Repellat iusto officiis corporis ducimus? Voluptatem vel, ipsam assumenda, eius esse tenetur debitis aliquid eligendi vero beatae doloremque doloribus facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nulla veniam laborum tempore amet voluptas itaque ipsum ut laboriosam odio aperiam modi hic neque doloribus, quas reiciendis officiis enim beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe unde consequatur quae voluptatibus ea quas expedita labore repellendus itaque libero est cupiditate dolores minima tenetur inventore, totam voluptate voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestias placeat ab natus laboriosam architecto rerum optio impedit. Ducimus nesciunt molestias ipsa veniam id earum dolorum non quae totam illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias debitis, inventore assumenda facilis molestias mollitia ipsam ipsa deserunt recusandae ducimus nemo adipisci asperiores! Consectetur atque molestias nostrum non voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti quod explicabo quis amet hic similique. Veritatis, iure sint voluptates quibusdam tenetur laudantium nam a dolorum perferendis totam. Tenetur, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequatur explicabo deleniti tenetur debitis, maiores pariatur? Est ipsum dolorum aliquid sunt distinctio ab sint, quaerat illo voluptatem? Cumque, in quod.</p>
     </main>
 </body>
 </html>

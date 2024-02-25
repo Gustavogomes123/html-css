@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralização vertical de caixas</title>
+    <!-- video de retorno "https://www.youtube.com/watch?v=-w0Qo_qQiRg&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=18" -->
+</head>
+<style>
+    #container{
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        position: relative;
+        height: 95vh;
+        
+        background-color: purple;
+        padding: 10px;
+    }
+    #conteudo{
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        position: relative;
+        width: 400px;
+        height: 200px;
+        background-color: yellow;
+        /* quando eu coloco a posição relativa em um bloco eu posso alterar a localização dele tipo baixo, cima, direita e esquerda: */
+        left: 50%;
+        top: 50%;
+        
+
+        transform: translate(-50%, -50%);/* colocando as mesmas porcentagens lá do left e top no translate fará a imagem centralizar uma com a outra */
+        /*transform:  translate(20px, 20px); lembrando que esses 20 px; se for negativo vai mexer para esquerda e para cima se for positivo tipo 20px normal vai mexer para direita e para baixo decorar essas alterações de posição, pois vou usar bastante*/
+    }
+</style>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
