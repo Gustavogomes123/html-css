@@ -1,0 +1,12 @@
+@charset "UTF-8";
+h1{
+    background-color: green;
+    border-radius: 5px;
+    text-indent: 20px;
+    background-image: linear-gradient(to right, rgb(0, 255, 0), white);
+}
+img{
+    margin: center;
+    text-align: center;
+    border-radius: 5px;
+}
