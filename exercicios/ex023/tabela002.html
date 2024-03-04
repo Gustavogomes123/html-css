@@ -13,11 +13,19 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
     }
     td, th{
         border: 1px solid black;
         padding: 10px;
     }
+
+    thead > tr > th {
+        position: sticky;/* vai colar o conteudo estado e população no topo da tela */
+        top: 0;
+        background: rgb(3, 0, 0);
+    }
+
     caption{
         font-size: 1em;
         font-weight: bolder;
@@ -28,10 +36,19 @@
         background-color: gray;
         color: white;
     }
+
+    tbody > tr:nth-child(2n){/* no lugar de "2n" eu posso colocar impar ou par: odd = impar
+    par = even
+    se eu colocar 2n-1 ele vai começar a  deixar cinza a primeira linha
+     */
+        background-color: lightgray;
+    }
+
     td.num{
         color: rgb(0, 221, 255);
         text-align: right;
     }
+
 </style>
 <body>
     <h1>Tabela:</h1>
@@ -109,5 +126,7 @@
         </tr>
       </tfoot>
     </table>
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem reprehenderit excepturi facere odio expedita eum quas nisi sed eaque, eveniet consectetur esse incidunt. At autem nemo facere omnis eos accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima voluptatem fugit aperiam ad delectus animi, id ea nemo ut! Asperiores facere suscipit beatae esse voluptates eligendi neque atque incidunt aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati iusto natus asperiores laboriosam, est dolores? Ullam eius nobis, nesciunt quia ipsam aspernatur non dolorum error eaque deserunt. Nulla, cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, architecto eaque! Delectus minus repellat magni nemo iusto suscipit natus sequi sunt, dolorum explicabo dolorem enim eius dignissimos culpa optio itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt reprehenderit libero magnam dolor porro esse unde nisi ipsam voluptas quasi exercitationem nulla, culpa fuga debitis vitae voluptate autem aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cum sint sed aut. Iure, iusto! Culpa, placeat? Corrupti expedita neque nesciunt fuga, sunt molestias nam est, cumque aut, veniam esse. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum odio eos consectetur voluptatibus quas dolores quisquam in aut similique aliquam iure omnis sint sapiente exercitationem nisi, natus qui quis? Dignissimos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rem error aliquam culpa ut delectus fugit deleniti dolor ipsam sunt et maxime soluta esse at ducimus placeat, quidem animi architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque, quaerat porro molestiae consequatur vitae repudiandae consequuntur ipsa perspiciatis aperiam dolores incidunt magni? Consectetur, quas quisquam laudantium tempora aliquid quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, officiis repellendus, eius recusandae quidem voluptatum vitae sunt facere, vel eveniet illo rerum sequi exercitationem. Dolores esse molestias laudantium inventore quod.</p>
 </body>
 </html>
