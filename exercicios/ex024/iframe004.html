@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- a configuração "sandbox="sandbox" cria uma proteção maior contra ataques por exemplo se eu colocar meus dados lá na barra e apertar para cadastrar, ele não fará o iframe mudar(ficará travado no cadastro)"
+O referrerpolicy="no-referrer" vai criar uma proteção que impede o google de te recomendar anuncios sobre coisas que vc pesquisou
+o referrerpolicy + sandbox, vai criar uma maxima proteção dentro de seu iframe-->
+<!-- sandbox="allow-same-origin allow-forms allow-scripts"(estou permitindo coisas da mesma origin, permito uso de formularios e permito script)  -->
+<body>
+    <h1>meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere similique reprehenderit harum inventore dolore nisi laboriosam et repudiandae enim in! Perferendis sapiente, porro quisquam illum animi harum obcaecati fuga?</p>
+    <iframe src="pag004.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        seu navegador nao é compativel
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum alias, ex harum reprehenderit nemo labore rerum mollitia debitis est aspernatur totam placeat voluptas, commodi nulla nobis, in laboriosam omnis tenetur!</p>
+</body>
+</html>
