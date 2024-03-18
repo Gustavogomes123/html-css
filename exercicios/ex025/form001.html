@@ -6,10 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+     <!-- "auto complete off" fará a barra de sugestão de "nome e senha" não aparecer.
+    o action="cadastro.php" fará os dados serem enviados e efetuados com uma linguagem de programação escolhida o "PHP".
+    nos inputs os "Names" são mais importantes e utéis em html e php, já o "id" é mais útil em JS.
+    dentro do for(label) sempre coloque o "ID" e não o "NAME".
+    sempre use label em formularios!-->
+    <!-- o form tem 2 metodos(method) também, o GET e o POST. O get por padrão sempre estará ativado, msm se vc n por o parametro "method"(fará os dados aparecer na barra de pesquisa) ja o method="POST" fará com que os dados não apareça na barra de pesquisa  -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="enviar"></p>
     </form>
+    <!-- vc pode ver que quando vc por os dados e por pra enviar, lá na barra de pesquisa mostrará as informações que o usuário colocou -->
+    <!-- o method="post" não deixa os dados 100% seguros, vá no inspecionar logo após vc por seus dados, e vai em network e dps em payload, lá estará seus dados! -->
+    <!-- quando usar get e post: GET:quando os dados não será sensiveis por exemplo, nome, peso e idade, eu uso o get.
+    agora se for senha, email e cpf, eu uso o "post"-->
+    <!-- o get tem um limite: o limite é de 3000bytes = 3000 letras se passou desse limite, não use o get! -->
+    <!-- relembrando que para trabalhar com dados sensiveis por exemplo, cpf, numeros de cartões de créditos, etc. vc não vai utilizar o get e nem o post, mas sim o HTTPS(É UM PROTOCOLO DE SEGURANÇA)
+    aprenda "https" -->
 </body>
 </html>
