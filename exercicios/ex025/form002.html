@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgba(43, 43, 245, 0.664);
+    }
+    div{
+        background-color: white;
+        text-align: center;
+        width: 500px;
+        height: 200px;
+        border-radius: 20px;
+        margin: auto;
+    }
+</style>
+<body>
+    <div>
+        <h1>teste de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15"  size="20" placeholder="Digite o seu usuário..." autocomplete="username">
+            <!-- size="20" = caixa do tamanho em que vai aparecer apenas 10 letras -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="15" size="20" placeholder="Digite sua senha..." autocomplete="current-password"><!-- password fará as letras serem bolinhas(segurança visual).
+            required = preencha este campo!
+            maxlength="15" = maximo de 15 digitos!
+            minlength="3" = minimo de 3 digitos!
+            limite a pessoa, pois se não terá como digitar na "caixa de texto" infinitamente!-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </div>
+    <!-- o autocomplete no "form" só tera duas opções "ligado(on) ou desligado(off) já o autocomplete nos "inputs" terá milhares de opções por exemplo se vc quer mostrar que uma caixa é de usuario vc vai escolher a opção autocomplete="username" se vc quer que o autocomplete te mostre a senha antiga vc coloca autocomplete="current-password" -->
+</form>
+</body>
+</html>
