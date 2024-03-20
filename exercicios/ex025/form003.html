@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+
+    h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    body{
+        background-color: rgba(34, 34, 233, 0.734);
+    }
+    div{
+        background-color: white;
+        padding: 1%;
+        border-radius: 10px;
+        width: 30%;
+        margin: auto;
+        width: 40vw;
+    }
+</style>
 <body>
     <h1>teste de formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <div><form action="cadastro.php" method="get" autocomplete="on">
     <p>
         <label for="inome">Nome:</label>
         <input type="text" name="nome" id="inome" required maxlength="30" minlength="5" placeholder="Nome completo aqui" autocomplete="name">
     </p>
     <p>
         <label for="imedia">Média</label>
-        <input type="number" name="Enviar" id="imedia" min="0" max="10" step="0.1" required placeholder="Média">
+        <input type="number" name="Enviar" id="imedia" min="0" max="10" step="0.1" required placeholder="Número...">
     </p>
     <p>
         <label for="imes">Periodo Letivo</label>
@@ -33,6 +52,7 @@
         <input type="reset" value="Limpar">
     </p>
 </form>
+</div>
 <!-- o "STEP"(passo) vai dando os passos de 0.1(vai até aparecer umas setinhas pra ir clicando), se não tivesse o "step" não seria seria possivel colocar numero como 0.1 para notas tinha que ser apenas numeros inteiros -->
 <!-- min e max são para numero minlength e maxlength é pra tudo, letras, numeros, etc. -->
 </body>
