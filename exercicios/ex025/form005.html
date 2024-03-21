@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <!-- no "RADIO" para fazer apenas 1 bolinha ser marcada é preciso por o mesmo nome em todas as alternativas(que são "2" feminino e masculino, caso contrario as 2 opções conseguiram ser marcadas, se eu quiser que "feminino" já comece marcado, eu apenas coloco checked na tag do input:radio(fem)).
+        eu não posso colocar checked em 2 radios que já estão em sincronia(juntos com o mesmo name) pq se não ele só vai deixar marcado o ultimo.
+        todos os radios que vc quer por em grupo, vc terá que por o mesmo "name".
+    esse values no feminino e no masculino eu só coloquei para aparecer os dados na barra de pesquisa pra quando eu clicar em enviar formulario, pois se não, não ia aparecer-->
+        <fieldset>
+            <legend>
+                Sexo
+            </legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" checked value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked><label for="iesbas" > Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut"> Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat"> Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten"> Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
