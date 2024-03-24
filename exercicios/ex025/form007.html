@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN"> Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM"> Administrador</option>
+                <option value="CONT"> Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                <!-- o lado bom desse datalist é que eu posso  pesquisar na barrinha para ir em busca das opções, e claro as sugestões que o próprio visitante colocou, também serão mostradas na lista(ficaram salvas) -->
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"><!-- criará um chat de texto, importante alterar o metodo para "post" para não ter limitações de texto pq o metodo"get" só suporta 3000 bytes(3000letras) já o "POST" não tem limite.  -->
+            <!-- COLS="30" = 30 letras até a quebra de linha, o usuário pode aumentar a caixa de texto e assim aumentando o valor da coluna que antes era "30" --></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
