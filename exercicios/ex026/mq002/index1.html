@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reunindo "media queries" em um único CSS</title>
+</head>
+<style>
+    /* eu posso colocar tudo isso em um único arquivo "CSS" também! ("link:css") e nem preciso por media="" pq as declarações de media já foram feitas no <style>@Media screen</style> */
+    /* declarações gerais */
+    /* relembrando que o melhor método é o do arquivo "index.html" onde cada declaração está separada em seu devido lugar, até pq o projeto vai crescer e vai ficar uma bagunça! */
+    @Media all{ /* esse "@Media all" é opcional. */
+        *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body{
+        background-color: #233eff;
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+        h1{
+        color: white;
+        text-shadow: 2px 2px 0px rgb(39, 39, 255);
+        padding: 10px;
+        }
+    }
+    /* declarações em retrato */
+    @media screen and (orientation: portrait){
+        body{
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center bottom;
+        }
+    }
+    /* declarações paisagem */
+    @media screen and (orientation: landscape){ 
+        body{
+            background-image: url(../imagens/cev-landscape.jpg);
+            background-position: left bottom;
+        }
+    }
+</style>
+<body>
+    <h1>Mude a orientação de seu dispositivo!</h1>
+</body>
+</html>
