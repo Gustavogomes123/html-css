@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()"><!-- "onresize" vai monitarar o tamanho do site -->
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer"  class="material-symbols-outlined" onclick="clickMenu()">Menu <!-- nesse "Menu" é só vc ir no site "https://fonts.google.com/icons" e encontrar o nome dos icones e por lá no "Menu" se vc deseja trocar, por exemplo: tenta mudar o "Menu" por "face" -->
+        </span>
+
+        <menu id="itens">
+                
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Midia
+            Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia odit cumque repellendus sit tempora quod est error, sapiente ducimus culpa facilis, impedit corporis velit porro excepturi numquam at adipisci eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum ducimus voluptas quod sapiente molestiae iure minima? Eveniet, dignissimos alias nulla asperiores, cum officiis ut delectus praesentium dolorem tenetur nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolores aut quo aliquam itaque tempora obcaecati inventore magnam repudiandae sed aspernatur veniam quis, dicta fugit molestias, molestiae, tempore ad suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum voluptatibus enim aspernatur animi quae, natus nostrum eligendi error. Pariatur deleniti amet veritatis vero recusandae. Assumenda ducimus tempora vero ex. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius corrupti accusamus itaque doloremque, rem labore, quia expedita temporibus architecto atque ratione sunt delectus aspernatur enim laudantium repudiandae repellendus perferendis commodi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat recusandae exercitationem consectetur quidem nisi sit ea maxime perspiciatis odio perferendis modi, dolor quam qui accusantium. Enim tenetur delectus laboriosam optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab sint quidem reprehenderit nemo cumque magnam dolor eligendi dicta nam eveniet quisquam doloribus, eum aliquam? Voluptate ab officia excepturi sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, distinctio deserunt, dolorem veniam nesciunt esse dolore veritatis cum soluta fuga voluptate! Quia quod maxime inventore repellat corrupti pariatur omnis repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae sapiente, eius quidem placeat suscipit velit aliquid dolore commodi iste beatae est voluptatum impedit ullam natus accusamus corrupti officia odio.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            /* "=" = recebe
+            "==" = é igual */
+            if (itens.style.display == 'block') { /* se o menu de itens estiver mostrando(block) e eu clicar: */
+                itens.style.display = 'none'
+                /* o menu vai se esconder */
+            } else {
+                itens.style.display = 'block'
+                /* se não estiver mostrando, ele passará a ser um 'block' quando eu clicar, e isso fará o menu aparecer */
+            }
+        }
+    </script>
+</body>
+
+</html>
